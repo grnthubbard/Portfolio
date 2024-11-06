@@ -1,0 +1,34 @@
+h1, h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bg-image {
+    height: 100vh;
+    background-image: url("images/breakers.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.pfp {
+    border-radius: 50%;
+}
+
+.header {
+    font-family:Afacad Flux;
+    letter-spacing: 2px;
+}
+
+.flux {
+    font-family:Afacad Flux;
+}
+
+.higher {
+    margin-top: 20vh;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: teal;
+    transition: transform 2s, ease;
+}
+
+
