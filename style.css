@@ -2,24 +2,17 @@ h1, h5 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.bg-image {
-    height: 100vh;
-    background-image: url("images/breakers.jpg") no-repeat center center fixed;
-    background-size: cover;
-}
+
 
 .pfp {
     border-radius: 50%;
 }
 
 .header {
-    font-family:Afacad Flux;
     letter-spacing: 2px;
 }
 
-.flux {
-    font-family:Afacad Flux;
-}
+
 
 .higher {
     margin-top: 20vh;
@@ -28,7 +21,42 @@ h1, h5 {
 #contact a:hover {
     text-decoration: underline;
     color: teal;
-    transition: transform 2s, ease;
+    transition: transform 2s ease;
 }
 
+h1 {
+    font-size: 4rem;
+    /* Transition animation */
+    transition: font-size 0.3s ease;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+div#header h2 {
+    overflow: hidden;
+    border-right: .5Wem solid orange;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation:
+        typing 3.5s steps(40,end),
+        blink-caret .75s step-end infinite;
+}
+
+/* Animation for typing */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+/* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 
