@@ -38,25 +38,56 @@ h1 {
     }
 }
 
-div#header h2 {
-    overflow: hidden;
-    border-right: .5Wem solid orange;
-    margin: 0 auto;
-    letter-spacing: 0.15em;
-    animation:
-        typing 3.5s steps(40,end),
-        blink-caret .75s step-end infinite;
+  /*Image container for header */
+  .image-container {
+    position: relative;
+    width: 80%;
+    margin: 10 auto;
+    height: 3rem;
+  }
+
+.image-container img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;   
+}
+.text-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    width: 90%;
+    z-index: 1;
 }
 
-/* Animation for typing */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-/* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+    padding: 30px;
+    margin: 150px;
+    column-gap: 20px;
+}
 
+.text {
+    display: flex;
+    align-items: start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+.text h1 {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+}
+
+
+.image {
+    width: 50%;
+    height: 25%;
+
+}
