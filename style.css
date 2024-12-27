@@ -1,27 +1,10 @@
-h1, h5 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
+/* Body div becomes a grid */
 
 
-
-.pfp {
-    border-radius: 50%;
-}
-
+/*Header Text */
 .header {
     letter-spacing: 2px;
-}
-
-
-
-.higher {
-    margin-top: 20vh;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-    color: teal;
-    transition: transform 2s ease;
 }
 
 h1 {
@@ -37,6 +20,16 @@ h1 {
         font-size: 2.5rem;
     }
 }
+
+
+
+#contact a:hover {
+    text-decoration: underline;
+    color: teal;
+    transition: transform 2s ease;
+}
+
+
 
   /*Image container for header */
   .image-container {
@@ -72,6 +65,8 @@ h1 {
     column-gap: 20px;
 }
 
+
+
 .text {
     display: flex;
     align-items: start;
@@ -80,10 +75,8 @@ h1 {
     justify-content: flex-start;
 }
 
-.text h1 {
-    font-size: 4.5rem;
-    margin-bottom: 10px;
-}
+
+
 
 
 .image {
@@ -91,3 +84,4 @@ h1 {
     height: 25%;
 
 }
+
