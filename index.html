@@ -15,31 +15,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="navbar">
+            <li>GRANT HUBBARD</li> 
+        <ul>
+            <li>
+                <a class="active" href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#resume">Resume</a>
+            </li>
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
+        </ul>
+        </div>
+    
+    </nav>   
     <header>
         <h1 class="text-uppercase text-center mt-0 mt-md-5 flux">Grant Hubbard</h1>
     </header>
-    <nav>     
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <button onclick="window.location.href= 'resume.html'">My Resume</button>
-    </nav>          
+       
 
-        <div class="container text-center my-5">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-3">
-                    <img class="pfp img-fluid d-none d-md-block"src="images/me.JPG">
-                </div>
-                <div class="col-md-8 text-md-start ms-md-3 text-center">
-                    <p>I've always relied on the pursuit of hard work and persistence. Whether that be working through code by trial and error, ensuring that an experience is usable, or simply just working on getting my basketball jumpshot down, I'm working to improve and better my professional and personal life every, single, day.</p>
-                </div>
-            </div>
+    <div id="landing_container">
+        <div id="landing_content">
+           <span id="typed"></span>
         </div>
+    </div>
+
+    
 
 
-        <section class="mb-4" id="contact"><!--about me-->
+        <section><!--about me-->
             <div class="container-lg">
                 <div class="text-center">
                     <h2 class="flux h1">Get in touch!</h2>
@@ -59,6 +70,6 @@
             </div>
         </div>
         </footer>
- 
+ <script src="script.js"></script>
 </body>
 </html>

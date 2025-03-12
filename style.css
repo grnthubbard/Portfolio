@@ -10,17 +10,15 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 4fr 0.5fr;
-    gap: 20px;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    
 }
 
-
-
-/*Header Text */
+/*Header Text (Grant Hubbard) */
 .header {
     letter-spacing: 2px;
 }
-
 h1 {
     font-size: 4rem;
     /* Transition animation */
@@ -36,54 +34,46 @@ h1 {
 }
 
 
-/*Navbar customization */
-
-
-#contact a:hover {
-    text-decoration: underline;
-    color: teal;
-    transition: transform 2s ease;
+div#navbar {
+    margin: 20px 0;
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Rubik;
+    color: grey;
+    list-style: none;
 }
 
 
 
-  /*Image container for header */
-  .image-container {
-    position: relative;
-    width: 80%;
-    margin: 10 auto;
-    height: 3rem;
-  }
+div#navbar ul {
+    list-style: none;
+    font-family: Rubik;
+    color: grey;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+div#navbar a {
+    text-decoration: none;
+    color: grey;
+}
+
+div#navbar a:hover {
+    text-decoration: underline;
+}
+div#navbar a.active {
+    color: black;
+}
+
 
 .image-container img {
     width: 80%;
     height: 100%;
     object-fit: cover;   
-}
-.text-wrap {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    width: 90%;
-    z-index: 1;
-}
-
-
-
-
-.image {
-    width: 50%;
-    height: 25%;
-
-}
-
-iframe#resume {
-    width:  80%;
-    height: 40%;
-    src: "https://drive.google.com/file/d/1G1YUGBcqRhdskcsm9Ol7IcCwm8XlFRvX/view?usp=drive_link";
 }
 
