@@ -77,3 +77,53 @@ div#navbar a.active {
     object-fit: cover;   
 }
 
+/*------header for my typed.js--------*/
+#typed-output {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    text-align: center;
+    margin-top: 6rem;
+    font-family: Rubik;
+    padding-left: 4rem;
+}
+@media (max-width: 768px) {
+    #typed-output {
+        font-size: 2rem;
+    }
+}
+.typed-cursor {
+    color: red;
+    font-size: 3rem;
+    animation: blink 0.7s infinite;
+    font-size: inherit;
+    display: inline;
+    vertical-align: baseline;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+p#bio-text {
+    font-family: rubik;
+    color: darkgray;
+    width: 40%;
+    text-align: start;
+    padding-right: 5%;
+}
+img#bio-pic {
+    object-fit: contain;
+    max-width: 20%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
