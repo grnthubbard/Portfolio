@@ -1,0 +1,131 @@
+h1#project-header {
+    text-align: center;
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 3rem;
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.card {
+    width: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    font-family: Rubik;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-family: Rubik;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: darkgray;
+}
+
+
+/* Navigation Bar Styles */
+div#navbar {
+    margin: 20px 0;
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Rubik;
+    color: grey;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+/* Styles for the name (left side of navbar) */
+div#navbar > li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: "DM Serif Text", serif;
+    color: black;
+    list-style: none;
+    font-family: Rubik;
+
+}
+
+/* Navigation Links (ul container) */
+div#navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    font-family: Rubik;
+}
+
+/* Nav links styling */
+div#navbar a {
+    text-decoration: none;
+    color: grey;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+div#navbar a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/* Active link styling */
+div#navbar a.active {
+    color: black;
+    font-weight: bold;
+}
+
+/* Mobile Styles for Navbar */
+@media (max-width: 768px) {
+    div#navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    div#navbar > li {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    div#navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
