@@ -27,6 +27,7 @@ h1 {
     font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: normal;
+    font-family: Rubik;
 }
 @media (max-width: 768px) {
     h1 {
@@ -136,6 +137,17 @@ div#navbar a.active {
 /*End Phone Screen*/
 
 
+/* Contact Area Styles */
+
+section#contact {
+    background-color: ghostwhite;
+    font-family: Rubik;
+}
+
+
+
+
+/* END CONTACT AREA STYLES */
 
 
 .typed-cursor {
@@ -168,10 +180,18 @@ img#bio-pic {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 4rem;
   }
 
   
 /*BELOW: Card content for projects.html */
+
+h1#project-header {
+    text-align: center;
+    font-family: Rubik;
+    font-weight: bold;
+}
+
 
 .card-container {
     display: flex;
